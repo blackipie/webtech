@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+<link rel="stylesheet" href="style.css">
+<style>
+   .regbutton{
+    margin-top: 1rem;
+    width: 105% !important;
+   } 
+</style>
+</head>
+<body>
+       <div class="container">
+           <div class="main">
+               <h2>Register Form </h2>
+               <form id="form_id" method="" action="reg.html"  name="reg_form" onsubmit="reg()">
+                   <label>User Name :</label>
+                   <input type="text" name="name" id="name" required />
+                   <label>Email :</label>
+                   <input type="email" name="email" id="email" required />
+                   <label>Password :</label>
+                   <input type="password" name="pass" id="password" required />
+                   <label>Confirm Password :</label>
+                   <input type="password" name="cpass" id="password" required />
+                   <input type="submit" class="regbutton" value="Register" id="submit"  />
+                   <input type="reset" class="regbutton"  value="Reset" id="reset" />
+               </form>
+           
+           </div>
+
+           <script>
+   function reg() {
+   var name = document.reg_form.name;
+   var email = document.reg_form.email;
+   var pass = document.reg_form.pass;
+   var cpass = document.reg_form.cpass;
+
+ window.location="index.html"
+ return false;
+
+}
+           </script>
+</body>
+</html>
